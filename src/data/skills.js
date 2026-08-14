@@ -1,0 +1,88 @@
+export const skillCategories = [
+  {
+    id: 'languages',
+    title: 'Programming Languages',
+    icon: '💻',
+    color: 'from-blue-500 to-cyan-400',
+    skills: [
+      { name: 'Python', icon: 'SiPython' },
+      { name: 'Java', icon: 'SiJava' },
+      { name: 'JavaScript', icon: 'SiJavascript' },
+      { name: 'HTML', icon: 'SiHtml5' },
+      { name: 'CSS', icon: 'SiCss3' },
+      { name: 'SQL', icon: 'SiPostgresql' },
+    ],
+  },
+  {
+    id: 'frontend',
+    title: 'Frontend',
+    icon: '⚛️',
+    color: 'from-cyan-500 to-sky-400',
+    skills: [
+      { name: 'React.js', icon: 'SiReact' },
+      { name: 'Vite', icon: 'SiVite' },
+      { name: 'Tailwind CSS', icon: 'SiTailwindcss' },
+      { name: 'React Router', icon: 'SiReactrouter' },
+      { name: 'Recharts', icon: 'SiChartdotjs' },
+    ],
+  },
+  {
+    id: 'backend',
+    title: 'Backend / Full Stack',
+    icon: '🟢',
+    color: 'from-purple-500 to-pink-400',
+    skills: [
+      { name: 'Node.js', icon: 'SiNodedotjs' },
+      { name: 'Express.js', icon: 'SiExpress' },
+      { name: 'MERN Stack', icon: 'SiMongodb' },
+      { name: 'FastAPI', icon: 'SiFastapi' },
+      { name: 'Django', icon: 'SiDjango' },
+    ],
+  },
+  {
+    id: 'database',
+    title: 'Databases',
+    icon: '🗄️',
+    color: 'from-green-500 to-emerald-400',
+    skills: [
+      { name: 'MongoDB', icon: 'SiMongodb' },
+      { name: 'SQLite', icon: 'SiSqlite' },
+      { name: 'SQLAlchemy', icon: 'SiAlchemy' },
+    ],
+  },
+  {
+    id: 'ml',
+    title: 'AI / ML / Data',
+    icon: '🤖',
+    color: 'from-orange-500 to-yellow-400',
+    skills: [
+      { name: 'Scikit-learn', icon: 'SiScikitlearn' },
+      { name: 'Pandas', icon: 'SiPandas' },
+      { name: 'NumPy', icon: 'SiNumpy' },
+      { name: 'Matplotlib', icon: 'SiPlotly' },
+    ],
+  },
+  {
+    id: 'tools',
+    title: 'Dev / Deployment / Tools',
+    icon: '☁️',
+    color: 'from-red-500 to-rose-400',
+    skills: [
+      { name: 'Git', icon: 'SiGit' },
+      { name: 'GitHub', icon: 'SiGithub' },
+      { name: 'Vercel', icon: 'SiVercel' },
+      { name: 'Render', icon: 'SiRender' },
+    ],
+  },
+  {
+    id: 'auth',
+    title: 'Authentication / APIs',
+    icon: '🔐',
+    color: 'from-violet-500 to-indigo-400',
+    skills: [
+      { name: 'JWT', icon: 'SiJsonwebtokens' },
+      { name: 'Google OAuth', icon: 'SiGoogle' },
+      { name: 'GitHub OAuth / API', icon: 'SiGithub' },
+    ],
+  },
+]

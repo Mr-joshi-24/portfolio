@@ -1,0 +1,16 @@
+{
+  "name": "Kavy Joshi Portfolio",
+  "short_name": "KJ Portfolio",
+  "description": "Full Stack Developer & AI Enthusiast Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E1A",
+  "theme_color": "#0066FF",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
