@@ -19,10 +19,10 @@ export const githubStats = {
     { name: 'Jupyter Notebook', percentage: 5, color: '#DA5B0B' },
   ],
   pinnedRepos: [
-    { name: 'Edutrack-AI', description: 'AI-Powered Student Analytics Platform built with React & FastAPI', language: 'JavaScript', stars: 0, url: 'https://github.com/Mr-joshi-24/Edutrack-AI' },
-    { name: 'KRAVEX-Web', description: 'Web application project', language: 'HTML', stars: 0, url: 'https://github.com/Mr-joshi-24/KRAVEX-Web' },
-    { name: 'Pandas', description: 'A structured journey of learning Pandas with daily code & real-world datasets', language: 'Jupyter Notebook', stars: 0, url: 'https://github.com/Mr-joshi-24/Pandas' },
-    { name: 'DSA-Practice', description: 'Data Structures & Algorithms practice problems', language: 'Java', stars: 0, url: 'https://github.com/Mr-joshi-24/DSA-Practice' },
+    { name: 'SpeechSense-AI', description: 'Full-Stack Speech Emotion Recognition Platform powered by CNN+LSTM & Flask ML Service', language: 'JavaScript', stars: 1, url: 'https://github.com/Mr-joshi-24/SpeechSense-AI' },
+    { name: 'Edutrack-AI', description: 'AI-Powered Student Analytics Platform built with React & FastAPI', language: 'JavaScript', stars: 1, url: 'https://github.com/Mr-joshi-24/Edutrack-AI' },
+    { name: 'Trackly', description: 'Full-stack MERN productivity suite for daily habits, tasks & job application CRM', language: 'JavaScript', stars: 0, url: 'https://github.com/Mr-joshi-24/Trackly' },
+    { name: '-college-management-system-java', description: 'Java Swing College Management System with JDBC & MySQL database integration', language: 'Java', stars: 1, url: 'https://github.com/Mr-joshi-24/-college-management-system-java' },
   ],
 }
 

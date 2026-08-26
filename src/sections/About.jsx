@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion'
+import { FiDownload } from 'react-icons/fi'
 import SectionHeading from '../components/ui/SectionHeading'
 import ScrollReveal from '../components/ui/ScrollReveal'
 import AnimatedCounter from '../components/ui/AnimatedCounter'
 import GlassCard from '../components/ui/GlassCard'
+import Button from '../components/ui/Button'
 import { stats } from '../data/stats'
 import useStore from '../store/useStore'
 import { useGitHubStats } from '../hooks/useGitHubStats'
@@ -100,7 +102,7 @@ const About = () => {
               </div>
 
               {/* Ambitions */}
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 gap-3 mb-6">
                 {[
                   { icon: '🚀', text: 'Building Impactful Software' },
                   { icon: '💡', text: 'Innovation & Creativity' },
@@ -112,6 +114,21 @@ const About = () => {
                     <span>{item.text}</span>
                   </div>
                 ))}
+              </div>
+
+              {/* Resume Button */}
+              <div className="pt-2">
+                <Button
+                  variant="secondary"
+                  size="md"
+                  icon={<FiDownload />}
+                  href="/Kavy_Joshi_Resume.pdf"
+                  download="Kavy_Joshi_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download Full Resume
+                </Button>
               </div>
             </div>
           </ScrollReveal>

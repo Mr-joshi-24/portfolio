@@ -48,6 +48,17 @@ const Footer = () => {
                   {link.label}
                 </button>
               ))}
+              <a
+                href="/Kavy_Joshi_Resume.pdf"
+                download="Kavy_Joshi_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-cyan-glow/80 hover:text-cyan-glow transition-colors text-left py-1 font-medium"
+                onMouseEnter={() => setCursorVariant('hover')}
+                onMouseLeave={() => setCursorVariant('default')}
+              >
+                📄 Resume PDF
+              </a>
             </div>
           </div>
 

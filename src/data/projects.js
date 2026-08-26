@@ -44,12 +44,60 @@ export const projects = [
   },
   {
     id: 2,
+    title: 'SpeechSense AI',
+    subtitle: 'Full-Stack Speech Emotion Recognition Platform',
+    description: 'A full-stack speech emotion recognition platform integrating a Time-Distributed CNN + LSTM deep learning model. Classifies speech audio into 7 emotion categories with real-time analytics, native browser voice recording, and detailed probability score dashboards.',
+    techStack: ['React 18', 'Node.js', 'Express.js', 'MongoDB', 'Python 3.11', 'Flask', 'TensorFlow', 'Librosa'],
+    features: [
+      'CNN + LSTM Deep Learning Architecture',
+      '7 Emotion Categories Classification',
+      'Live Browser Audio Recording & Multi-Format Upload',
+      'Flask ML Inference Microservice',
+      'Real-Time Recharts Analytics Dashboard',
+      'Historical Prediction Log & Trend Filters'
+    ],
+    github: 'https://github.com/Mr-joshi-24/SpeechSense-AI',
+    live: 'https://speech-sense-ai.vercel.app',
+    category: 'ml',
+    year: '2025',
+  },
+  {
+    id: 3,
+    title: 'Trackly',
+    subtitle: 'MERN Stack Productivity & Job CRM Suite',
+    description: 'A modern full-stack MERN productivity suite for tracking daily habit routines with visual consistency grids, managing complex project tasks with priorities, and organizing job application pipelines.',
+    techStack: ['React 18', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Vite', 'REST API'],
+    features: [
+      'Daily Habit Tracker with Consistency Grids',
+      'Project Task Management & Priorities',
+      'Job Application CRM & Pipeline Tracker',
+      'MongoDB & Mongoose Persistence Architecture'
+    ],
+    github: 'https://github.com/Mr-joshi-24/Trackly',
+    live: '#',
+    category: 'fullstack',
+    year: '2025',
+  },
+  {
+    id: 4,
+    title: 'Collegement (College Management System)',
+    subtitle: 'Java Swing & MySQL Desktop Application',
+    description: 'A Diploma Advanced Java project — a Java Swing desktop application integrated with JDBC and MySQL/MariaDB for managing student records, courses, marks, and academic enrollments.',
+    techStack: ['Java', 'Java Swing', 'JDBC', 'MySQL', 'MariaDB', 'OOP'],
+    features: ['Student Records Management', 'Course Enrollments', 'JDBC Database Connectivity', 'MySQL/MariaDB Integration', 'Desktop GUI Interface'],
+    github: 'https://github.com/Mr-joshi-24/-college-management-system-java',
+    live: '#',
+    category: 'fullstack',
+    year: '2024',
+  },
+  {
+    id: 5,
     title: 'Job Scout AI',
     subtitle: 'AI Job Search & Career Scout',
     description: 'An intelligent AI-driven job searching and career scouting platform that analyzes job postings, matches resume profiles, identifies skill gaps, and recommends personalized tech opportunities.',
     techStack: ['React', 'FastAPI', 'Python', 'AI/ML', 'NLP', 'Tailwind CSS'],
     features: ['AI Resume Matcher', 'Smart Job Recommendations', 'Skill Gap Analysis', 'Application Tracker'],
-    github: 'https://github.com/Mr-joshi-24',
+    github: 'https://github.com/Mr-joshi-24/JobScout-AI',
     live: '#',
     category: 'ml',
     year: '2025',
@@ -62,4 +110,5 @@ export const projectCategories = [
   { key: 'fullstack', label: 'Full Stack' },
   { key: 'ml', label: 'AI / ML' },
 ]
+
 

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiSend, FiCheck, FiAlertCircle, FiGithub, FiLinkedin, FiInstagram, FiMail, FiMapPin } from 'react-icons/fi'
+import { FiSend, FiCheck, FiAlertCircle, FiGithub, FiLinkedin, FiInstagram, FiMail, FiMapPin, FiDownload } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 import SectionHeading from '../components/ui/SectionHeading'
 import ScrollReveal from '../components/ui/ScrollReveal'
@@ -187,7 +187,7 @@ const Contact = () => {
                     I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing.
                   </p>
 
-                  <div className="space-y-3">
+                  <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-3 text-sm">
                       <FiMail className="w-4 h-4 text-cyan-glow" />
                       <a href="mailto:joshikavy35@gmail.com" className="text-dark-500 hover:text-cyan-glow transition-colors">
@@ -196,9 +196,22 @@ const Contact = () => {
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <FiMapPin className="w-4 h-4 text-cyan-glow" />
-                      <span className="text-dark-500">India</span>
+                      <span className="text-dark-500">Ahmedabad, Gujarat, India</span>
                     </div>
                   </div>
+
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    className="w-full"
+                    icon={<FiDownload />}
+                    href="/Kavy_Joshi_Resume.pdf"
+                    download="Kavy_Joshi_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download Resume PDF
+                  </Button>
                 </GlassCard>
 
                 {/* Social Links */}

@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiSearch, FiArrowRight } from 'react-icons/fi'
+import { FiSearch, FiArrowRight, FiDownload } from 'react-icons/fi'
 import useStore from '../../store/useStore'
 import { navLinks } from '../../data/socialLinks'
 import { scrollToSection } from '../../utils/helpers'
@@ -59,6 +59,17 @@ const CommandPalette = () => {
 
               {/* Options */}
               <div className="max-h-64 overflow-y-auto py-2">
+                <a
+                  href="/Kavy_Joshi_Resume.pdf"
+                  download="Kavy_Joshi_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setCommandOpen(false)}
+                  className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-cyan-glow bg-cyan-glow/5 hover:bg-cyan-glow/10 transition-colors font-medium border-b border-white/5"
+                >
+                  <FiDownload className="text-cyan-glow text-sm" />
+                  <span>Download Resume PDF</span>
+                </a>
                 {navLinks.map((link) => (
                   <button
                     key={link.id}

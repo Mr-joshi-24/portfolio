@@ -115,7 +115,10 @@ const Hero = () => {
               variant="secondary"
               size="lg"
               icon={<FiDownload />}
-              href="#"
+              href="/Kavy_Joshi_Resume.pdf"
+              download="Kavy_Joshi_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Download Resume
             </Button>
