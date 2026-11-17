@@ -31,11 +31,10 @@ const Projects = () => {
               <button
                 key={cat.key}
                 onClick={() => setActiveFilter(cat.key)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeFilter === cat.key
-                    ? 'bg-gradient-to-r from-primary-600 to-primary-500 text-white shadow-glow-blue'
-                    : 'glass text-dark-500 hover:text-cloud border border-white/5'
-                }`}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeFilter === cat.key
+                  ? 'bg-gradient-to-r from-primary-600 to-primary-500 text-white shadow-glow-blue'
+                  : 'glass text-dark-500 hover:text-cloud border border-white/5'
+                  }`}
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
               >
@@ -69,8 +68,9 @@ const Projects = () => {
                           </span>
                         )}
                       </div>
-                      <span className="text-dark-400 text-xs font-mono">{project.year}</span>
+                      <span className="text-dark-400 text-xs font-mono">{project.subtitle || project.year}</span>
                     </div>
+                    <span className="text-dark-400 text-xs font-mono">{project.year}</span>
                   </div>
 
                   {/* Description */}
@@ -106,7 +106,7 @@ const Projects = () => {
                       Code
                     </Button>
                     {!project.comingSoon && (
-                      <Button variant="ghost" size="sm" icon={<FiExternalLink />} href={project.live}>
+                      <Button variant="ghost" size="sm" icon={<FiExternalLink />} href={project.live} target="_blank" rel="noopener noreferrer">
                         Preview
                       </Button>
                     )}

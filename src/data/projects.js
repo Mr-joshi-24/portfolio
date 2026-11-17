@@ -1,40 +1,76 @@
 export const featuredProject = {
-  title: 'EduTrack AI',
-  subtitle: 'AI-Powered College Management System',
-  description: 'A comprehensive college management and student analytics platform powered by Machine Learning. Features AI-driven performance prediction, risk detection, smart attendance management, and an interactive academic calendar — all wrapped in a modern, responsive UI.',
-  techStack: ['React', 'FastAPI', 'SQLite', 'Machine Learning', 'Tailwind CSS', 'Python', 'Scikit-Learn', 'Pandas'],
-  features: [
-    'AI-powered student analytics',
-    'Attendance Management',
-    'Academic Calendar',
-    'Performance Prediction',
-    'Student Dashboard',
-    'Admin Dashboard',
-    'Reports & Excel Export',
-    'Risk Detection',
-    'Advanced Analytics',
-    'Modern UI/UX',
-    'Authentication System',
-    'Interactive Charts',
-    'Responsive Design',
-    'GitHub Integration (future ready)',
-    'Google Calendar Integration (future ready)',
+  title: 'Invoice IQ',
+  subtitle: 'Extract. Validate. Understand.',
+  description:
+    'An AI-powered intelligent invoice processing platform that uses OCR, machine learning, automated data extraction, financial validation, anomaly detection, and human-in-the-loop verification to transform unstructured invoices into structured financial data.',
+  techStack: [
+    'Python',
+    'FastAPI',
+    'React',
+    'Scikit-learn',
+    'PaddleOCR',
+    'OpenCV',
+    'SQLAlchemy',
+    'Docker',
   ],
+  features: [
+    'OCR-Based Text Extraction',
+    'ML Token Classification',
+    'Structured Field Extraction',
+    'Automated Financial Validation',
+    'Isolation Forest Anomaly Detection',
+    'Confidence Scoring & Routing',
+    'Human-in-the-Loop Review Canvas',
+    'Executive Analytics Dashboard',
+  ],
+  architecture: ['React 18', 'FastAPI', 'OpenCV / PaddleOCR', 'Scikit-learn', 'SQLAlchemy'],
   links: {
-    live: 'https://edutrack-ai-pink.vercel.app',
-    github: 'https://github.com/Mr-joshi-24/Edutrack-AI',
-    caseStudy: '#',
+    live: 'https://invoice-iq-jet.vercel.app/',
+    github: 'https://github.com/Mr-joshi-24/invoice-IQ',
+    api: 'https://invoice-iq-zrxw.onrender.com',
   },
-  status: 'In Development',
+  image: '/invoice-iq-preview.svg',
+  status: 'Live & Operational',
   year: '2025',
 }
 
 export const projects = [
   {
     id: 1,
+    title: 'Invoice IQ',
+    subtitle: 'Extract. Validate. Understand.',
+    description:
+      'An AI-powered intelligent invoice processing platform that uses OCR, machine learning, automated data extraction, financial validation, anomaly detection, and human-in-the-loop verification to transform unstructured invoices into structured financial data.',
+    techStack: [
+      'Python',
+      'FastAPI',
+      'React',
+      'Scikit-learn',
+      'PaddleOCR',
+      'OpenCV',
+      'SQLAlchemy',
+      'Docker',
+    ],
+    features: [
+      'OCR-Based Text Extraction',
+      'ML Token Classification',
+      'Structured Field Extraction',
+      'Automated Financial Validation',
+      'Isolation Forest Anomaly Detection',
+      'Human-in-the-Loop Review',
+    ],
+    github: 'https://github.com/Mr-joshi-24/invoice-IQ',
+    live: 'https://invoice-iq-jet.vercel.app/',
+    api: 'https://invoice-iq-zrxw.onrender.com',
+    category: 'ml',
+    year: '2025',
+  },
+  {
+    id: 2,
     title: 'EduTrack AI',
     subtitle: 'College Management System',
-    description: 'A comprehensive college management and student analytics platform powered by Machine Learning. Features AI-driven performance prediction, risk detection, smart attendance management, and an interactive academic calendar.',
+    description:
+      'A comprehensive college management and student analytics platform powered by Machine Learning. Features AI-driven performance prediction, risk detection, smart attendance management, and an interactive academic calendar.',
     techStack: ['React', 'FastAPI', 'SQLite', 'Machine Learning', 'Tailwind CSS', 'Python', 'Scikit-Learn', 'Pandas'],
     features: ['AI Student Analytics', 'Attendance Management', 'Academic Calendar', 'Performance Prediction', 'Risk Detection', 'Reports & Excel Export'],
     github: 'https://github.com/Mr-joshi-24/Edutrack-AI',
@@ -43,10 +79,11 @@ export const projects = [
     year: '2025',
   },
   {
-    id: 2,
+    id: 3,
     title: 'SpeechSense AI',
     subtitle: 'Full-Stack Speech Emotion Recognition Platform',
-    description: 'A full-stack speech emotion recognition platform integrating a Time-Distributed CNN + LSTM deep learning model. Classifies speech audio into 7 emotion categories with real-time analytics, native browser voice recording, and detailed probability score dashboards.',
+    description:
+      'A full-stack speech emotion recognition platform integrating a Time-Distributed CNN + LSTM deep learning model. Classifies speech audio into 7 emotion categories with real-time analytics, native browser voice recording, and detailed probability score dashboards.',
     techStack: ['React 18', 'Node.js', 'Express.js', 'MongoDB', 'Python 3.11', 'Flask', 'TensorFlow', 'Librosa'],
     features: [
       'CNN + LSTM Deep Learning Architecture',
@@ -54,7 +91,7 @@ export const projects = [
       'Live Browser Audio Recording & Multi-Format Upload',
       'Flask ML Inference Microservice',
       'Real-Time Recharts Analytics Dashboard',
-      'Historical Prediction Log & Trend Filters'
+      'Historical Prediction Log & Trend Filters',
     ],
     github: 'https://github.com/Mr-joshi-24/SpeechSense-AI',
     live: 'https://speech-sense-ai.vercel.app',
@@ -62,16 +99,17 @@ export const projects = [
     year: '2025',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Trackly',
     subtitle: 'MERN Stack Productivity & Job CRM Suite',
-    description: 'A modern full-stack MERN productivity suite for tracking daily habit routines with visual consistency grids, managing complex project tasks with priorities, and organizing job application pipelines.',
+    description:
+      'A modern full-stack MERN productivity suite for tracking daily habit routines with visual consistency grids, managing complex project tasks with priorities, and organizing job application pipelines.',
     techStack: ['React 18', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'Vite', 'REST API'],
     features: [
       'Daily Habit Tracker with Consistency Grids',
       'Project Task Management & Priorities',
       'Job Application CRM & Pipeline Tracker',
-      'MongoDB & Mongoose Persistence Architecture'
+      'MongoDB & Mongoose Persistence Architecture',
     ],
     github: 'https://github.com/Mr-joshi-24/Trackly',
     live: '#',
@@ -79,10 +117,11 @@ export const projects = [
     year: '2025',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Collegement (College Management System)',
     subtitle: 'Java Swing & MySQL Desktop Application',
-    description: 'A Diploma Advanced Java project — a Java Swing desktop application integrated with JDBC and MySQL/MariaDB for managing student records, courses, marks, and academic enrollments.',
+    description:
+      'A Diploma Advanced Java project — a Java Swing desktop application integrated with JDBC and MySQL/MariaDB for managing student records, courses, marks, and academic enrollments.',
     techStack: ['Java', 'Java Swing', 'JDBC', 'MySQL', 'MariaDB', 'OOP'],
     features: ['Student Records Management', 'Course Enrollments', 'JDBC Database Connectivity', 'MySQL/MariaDB Integration', 'Desktop GUI Interface'],
     github: 'https://github.com/Mr-joshi-24/-college-management-system-java',
@@ -91,10 +130,11 @@ export const projects = [
     year: '2024',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Job Scout AI',
     subtitle: 'AI Job Search & Career Scout',
-    description: 'An intelligent AI-driven job searching and career scouting platform that analyzes job postings, matches resume profiles, identifies skill gaps, and recommends personalized tech opportunities.',
+    description:
+      'An intelligent AI-driven job searching and career scouting platform that analyzes job postings, matches resume profiles, identifies skill gaps, and recommends personalized tech opportunities.',
     techStack: ['React', 'FastAPI', 'Python', 'AI/ML', 'NLP', 'Tailwind CSS'],
     features: ['AI Resume Matcher', 'Smart Job Recommendations', 'Skill Gap Analysis', 'Application Tracker'],
     github: 'https://github.com/Mr-joshi-24/JobScout-AI',
@@ -107,8 +147,6 @@ export const projects = [
 
 export const projectCategories = [
   { key: 'all', label: 'All Projects' },
-  { key: 'fullstack', label: 'Full Stack' },
   { key: 'ml', label: 'AI / ML' },
+  { key: 'fullstack', label: 'Full Stack' },
 ]
-
-

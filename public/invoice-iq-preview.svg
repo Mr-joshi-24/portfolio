@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E1A" />
+      <stop offset="50%" stop-color="#0D1322" />
+      <stop offset="100%" stop-color="#080C16" />
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141B2D" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F1626" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B2438" />
+      <stop offset="100%" stop-color="#131A29" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)" />
+
+  <!-- Ambient background glow blobs -->
+  <circle cx="200" cy="150" r="180" fill="#0066FF" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1000" cy="500" r="220" fill="#00F0FF" opacity="0.06" filter="url(#glow)" />
+  <circle cx="700" cy="200" r="160" fill="#8B5CF6" opacity="0.06" filter="url(#glow)" />
+
+  <!-- App Container Frame -->
+  <rect x="24" y="24" width="1152" height="632" rx="16" fill="url(#panelGrad)" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5" />
+
+  <!-- Sidebar -->
+  <rect x="24" y="24" width="220" height="632" rx="16" fill="#0A0E1A" fill-opacity="0.75" />
+  <line x1="244" y1="24" x2="244" y2="656" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" />
+
+  <!-- Logo Area -->
+  <g transform="translate(48, 54)">
+    <rect x="0" y="0" width="34" height="34" rx="8" fill="url(#cyanGrad)" />
+    <path d="M10 11 L24 11 M17 11 L17 23 M11 23 L23 23" stroke="#0A0E1A" stroke-width="2.8" stroke-linecap="round" />
+    <text x="44" y="22" fill="#F8FAFC" font-size="16" font-weight="800" class="font-sans" letter-spacing="-0.02em">Invoice IQ</text>
+    <text x="44" y="33" fill="#00F0FF" font-size="9" font-weight="600" class="font-mono">v2.0 • AI PLATFORM</text>
+  </g>
+
+  <!-- Navigation items -->
+  <g transform="translate(42, 120)">
+    <!-- Item 1: Active Dashboard -->
+    <rect x="0" y="0" width="184" height="36" rx="8" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="18" cy="18" r="4" fill="#00F0FF" />
+    <text x="32" y="22" fill="#00F0FF" font-size="12" font-weight="600" class="font-sans">Executive Dashboard</text>
+
+    <!-- Item 2: Document Ingestion -->
+    <text x="32" y="62" fill="#71717A" font-size="12" font-weight="500" class="font-sans">Document Upload</text>
+
+    <!-- Item 3: Invoices List -->
+    <text x="32" y="102" fill="#71717A" font-size="12" font-weight="500" class="font-sans">Invoice Ledger</text>
+
+    <!-- Item 4: Review Center -->
+    <rect x="0" y="122" width="184" height="36" rx="8" fill="#ffffff" fill-opacity="0.03" />
+    <text x="32" y="144" fill="#A1A1AA" font-size="12" font-weight="500" class="font-sans">HITL Review Center</text>
+    <rect x="156" y="132" width="18" height="16" rx="4" fill="#F59E0B" fill-opacity="0.2" />
+    <text x="162" y="144" fill="#F59E0B" font-size="9" font-weight="700" class="font-mono">3</text>
+
+    <!-- Item 5: Analytics & ML -->
+    <text x="32" y="186" fill="#71717A" font-size="12" font-weight="500" class="font-sans">ML Benchmarks</text>
+
+    <!-- Item 6: Settings -->
+    <text x="32" y="226" fill="#71717A" font-size="12" font-weight="500" class="font-sans">System Settings</text>
+  </g>
+
+  <!-- Bottom System Status in Sidebar -->
+  <g transform="translate(42, 580)">
+    <rect x="0" y="0" width="184" height="52" rx="8" fill="#111827" stroke="#ffffff" stroke-opacity="0.06" />
+    <circle cx="16" cy="20" r="4" fill="#10B981" />
+    <text x="28" y="23" fill="#F8FAFC" font-size="11" font-weight="600" class="font-sans">FastAPI Backend</text>
+    <text x="16" y="39" fill="#10B981" font-size="10" font-weight="500" class="font-mono">Online • Render API</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <!-- Top Bar -->
+  <g transform="translate(268, 44)">
+    <text x="0" y="18" fill="#F8FAFC" font-size="18" font-weight="700" class="font-sans">Operational Intelligence Dashboard</text>
+    <text x="0" y="34" fill="#71717A" font-size="11" font-weight="400" class="font-sans">Automated OCR, Machine Learning classification, and deterministic financial validation</text>
+
+    <!-- Badges Right -->
+    <rect x="680" y="6" width="190" height="28" rx="6" fill="#00F0FF" fill-opacity="0.08" stroke="#00F0FF" stroke-opacity="0.25" />
+    <circle cx="694" cy="20" r="3.5" fill="#00F0FF" />
+    <text x="706" y="24" fill="#00F0FF" font-size="10" font-weight="600" class="font-mono">Extract • Validate • Understand</text>
+  </g>
+
+  <!-- KPI Cards (4) -->
+  <g transform="translate(268, 102)">
+    <!-- Card 1: Total Documents -->
+    <rect x="0" y="0" width="204" height="88" rx="10" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.06" />
+    <text x="16" y="24" fill="#71717A" font-size="11" font-weight="500" class="font-sans">TOTAL INVOICES</text>
+    <text x="16" y="58" fill="#F8FAFC" font-size="28" font-weight="800" class="font-mono">142</text>
+    <text x="16" y="74" fill="#10B981" font-size="10" font-weight="600" class="font-mono">↑ 100% Indexed</text>
+
+    <!-- Card 2: Auto Approval -->
+    <rect x="224" y="0" width="204" height="88" rx="10" fill="url(#cardGrad)" stroke="#00F0FF" stroke-opacity="0.15" />
+    <text x="240" y="24" fill="#71717A" font-size="11" font-weight="500" class="font-sans">AUTO-APPROVED RATE</text>
+    <text x="240" y="58" fill="#00F0FF" font-size="28" font-weight="800" class="font-mono">89.4%</text>
+    <text x="240" y="74" fill="#71717A" font-size="10" font-weight="400" class="font-mono">Threshold: ≥ 80% Valid</text>
+
+    <!-- Card 3: ML Token Precision -->
+    <rect x="448" y="0" width="204" height="88" rx="10" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.06" />
+    <text x="464" y="24" fill="#71717A" font-size="11" font-weight="500" class="font-sans">ML TOKEN F1-SCORE</text>
+    <text x="464" y="58" fill="#A855F7" font-size="28" font-weight="800" class="font-mono">1.00</text>
+    <text x="464" y="74" fill="#A855F7" font-size="10" font-weight="600" class="font-mono">LogReg + TF-IDF</text>
+
+    <!-- Card 4: Anomalies -->
+    <rect x="672" y="0" width="204" height="88" rx="10" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.06" />
+    <text x="688" y="24" fill="#71717A" font-size="11" font-weight="500" class="font-sans">ANOMALIES FLAGGED</text>
+    <text x="688" y="58" fill="#F59E0B" font-size="28" font-weight="800" class="font-mono">12</text>
+    <text x="688" y="74" fill="#F59E0B" font-size="10" font-weight="500" class="font-mono">Isolation Forest</text>
+  </g>
+
+  <!-- Bottom Workspace: Split View (Document Bounding Boxes on Left, Structured Table on Right) -->
+  <g transform="translate(268, 208)">
+    <!-- Left Box: Document OCR & Bounding Boxes Canvas -->
+    <rect x="0" y="0" width="380" height="424" rx="12" fill="#0D1322" stroke="#ffffff" stroke-opacity="0.08" />
+    <text x="18" y="26" fill="#F8FAFC" font-size="13" font-weight="600" class="font-sans">Document OCR &amp; BBox Canvas</text>
+    <text x="18" y="42" fill="#71717A" font-size="10" font-weight="400" class="font-mono">PyMuPDF 300 DPI • PaddleOCR Normalized Tokens</text>
+
+    <!-- Simulated Document Sheet -->
+    <g transform="translate(24, 60)">
+      <rect x="0" y="0" width="332" height="340" rx="8" fill="#131B2E" stroke="#ffffff" stroke-opacity="0.1" />
+
+      <!-- Document Header -->
+      <text x="20" y="32" fill="#94A3B8" font-size="12" font-weight="700" class="font-mono">TAX INVOICE</text>
+      <text x="210" y="32" fill="#00F0FF" font-size="10" font-weight="600" class="font-mono">INV-2025-0042</text>
+
+      <!-- Vendor Bounding Box Overlay -->
+      <rect x="18" y="48" width="180" height="36" rx="4" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-width="1.2" stroke-dasharray="3 2" />
+      <text x="24" y="64" fill="#00F0FF" font-size="9" font-weight="700" class="font-mono">[VENDOR]</text>
+      <text x="24" y="76" fill="#F8FAFC" font-size="10" font-weight="500" class="font-sans">Apex Technologies Pvt Ltd</text>
+
+      <!-- GSTIN Bounding Box -->
+      <rect x="18" y="92" width="190" height="26" rx="4" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-width="1.2" />
+      <text x="24" y="108" fill="#10B981" font-size="10" font-weight="600" class="font-mono">GSTIN: 27AABCU9603R1ZM</text>
+
+      <!-- Line items table -->
+      <line x1="18" y1="130" x2="314" y2="130" stroke="#ffffff" stroke-opacity="0.08" />
+      <text x="20" y="148" fill="#71717A" font-size="9" class="font-mono">ITEM DESCRIPTION</text>
+      <text x="260" y="148" fill="#71717A" font-size="9" class="font-mono">AMOUNT</text>
+      <line x1="18" y1="156" x2="314" y2="156" stroke="#ffffff" stroke-opacity="0.08" />
+
+      <text x="20" y="176" fill="#CBD5E1" font-size="10" class="font-sans">AI Model Consulting Services</text>
+      <text x="240" y="176" fill="#F8FAFC" font-size="10" class="font-mono">₹ 45,000.00</text>
+
+      <text x="20" y="198" fill="#CBD5E1" font-size="10" class="font-sans">Integrated IGST @ 18%</text>
+      <text x="246" y="198" fill="#F8FAFC" font-size="10" class="font-mono">₹ 8,100.00</text>
+
+      <!-- Total Bounding Box -->
+      <rect x="18" y="222" width="296" height="38" rx="6" fill="#8B5CF6" fill-opacity="0.14" stroke="#8B5CF6" stroke-width="1.5" />
+      <text x="26" y="244" fill="#A855F7" font-size="10" font-weight="700" class="font-mono">GRAND TOTAL (BBox [0.72, 0.88]):</text>
+      <text x="228" y="246" fill="#00F0FF" font-size="13" font-weight="800" class="font-mono">₹ 53,100.00</text>
+
+      <!-- Verified Stamp -->
+      <rect x="20" y="280" width="130" height="24" rx="4" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-opacity="0.3" />
+      <circle cx="32" cy="292" r="3" fill="#10B981" />
+      <text x="42" y="296" fill="#10B981" font-size="9" font-weight="600" class="font-mono">MATH BALANCED</text>
+    </g>
+
+    <!-- Right Box: Structured Extraction Table & Validation -->
+    <rect x="398" y="0" width="478" height="424" rx="12" fill="#0D1322" stroke="#ffffff" stroke-opacity="0.08" />
+    <text x="418" y="26" fill="#F8FAFC" font-size="13" font-weight="600" class="font-sans">Validated Financial Fields</text>
+    <text x="418" y="42" fill="#71717A" font-size="10" font-weight="400" class="font-mono">Hybrid Extraction • Multi-Factor Confidence Scoring</text>
+
+    <!-- Table Header -->
+    <g transform="translate(414, 58)">
+      <rect x="0" y="0" width="446" height="26" rx="4" fill="#ffffff" fill-opacity="0.03" />
+      <text x="12" y="17" fill="#71717A" font-size="9" font-weight="600" class="font-mono">FIELD NAME</text>
+      <text x="130" y="17" fill="#71717A" font-size="9" font-weight="600" class="font-mono">VALUE</text>
+      <text x="280" y="17" fill="#71717A" font-size="9" font-weight="600" class="font-mono">CONFIDENCE</text>
+      <text x="375" y="17" fill="#71717A" font-size="9" font-weight="600" class="font-mono">STATUS</text>
+
+      <!-- Row 1: Invoice # -->
+      <line x1="0" y1="34" x2="446" y2="34" stroke="#ffffff" stroke-opacity="0.04" />
+      <text x="12" y="52" fill="#F8FAFC" font-size="11" font-weight="500" class="font-sans">Invoice Number</text>
+      <text x="130" y="52" fill="#00F0FF" font-size="11" font-weight="600" class="font-mono">INV-2025-0042</text>
+      <text x="280" y="52" fill="#10B981" font-size="11" font-weight="700" class="font-mono">99.8%</text>
+      <rect x="375" y="40" width="56" height="18" rx="3" fill="#10B981" fill-opacity="0.15" />
+      <text x="382" y="53" fill="#10B981" font-size="9" font-weight="700" class="font-mono">PASSED</text>
+
+      <!-- Row 2: Date -->
+      <line x1="0" y1="64" x2="446" y2="64" stroke="#ffffff" stroke-opacity="0.04" />
+      <text x="12" y="82" fill="#F8FAFC" font-size="11" font-weight="500" class="font-sans">Invoice Date</text>
+      <text x="130" y="82" fill="#E2E8F0" font-size="11" font-weight="500" class="font-mono">2025-10-14</text>
+      <text x="280" y="82" fill="#10B981" font-size="11" font-weight="700" class="font-mono">99.5%</text>
+      <rect x="375" y="70" width="56" height="18" rx="3" fill="#10B981" fill-opacity="0.15" />
+      <text x="382" y="83" fill="#10B981" font-size="9" font-weight="700" class="font-mono">PASSED</text>
+
+      <!-- Row 3: Vendor GSTIN -->
+      <line x1="0" y1="94" x2="446" y2="94" stroke="#ffffff" stroke-opacity="0.04" />
+      <text x="12" y="112" fill="#F8FAFC" font-size="11" font-weight="500" class="font-sans">Vendor GSTIN</text>
+      <text x="130" y="112" fill="#E2E8F0" font-size="10.5" font-weight="500" class="font-mono">27AABCU9603R1ZM</text>
+      <text x="280" y="112" fill="#10B981" font-size="11" font-weight="700" class="font-mono">100.0%</text>
+      <rect x="375" y="100" width="56" height="18" rx="3" fill="#10B981" fill-opacity="0.15" />
+      <text x="382" y="113" fill="#10B981" font-size="9" font-weight="700" class="font-mono">STATE 27</text>
+
+      <!-- Row 4: Subtotal -->
+      <line x1="0" y1="124" x2="446" y2="124" stroke="#ffffff" stroke-opacity="0.04" />
+      <text x="12" y="142" fill="#F8FAFC" font-size="11" font-weight="500" class="font-sans">Subtotal</text>
+      <text x="130" y="142" fill="#E2E8F0" font-size="11" font-weight="500" class="font-mono">₹ 45,000.00</text>
+      <text x="280" y="142" fill="#10B981" font-size="11" font-weight="700" class="font-mono">99.2%</text>
+      <rect x="375" y="130" width="56" height="18" rx="3" fill="#10B981" fill-opacity="0.15" />
+      <text x="382" y="143" fill="#10B981" font-size="9" font-weight="700" class="font-mono">PASSED</text>
+
+      <!-- Row 5: Tax Amount -->
+      <line x1="0" y1="154" x2="446" y2="154" stroke="#ffffff" stroke-opacity="0.04" />
+      <text x="12" y="172" fill="#F8FAFC" font-size="11" font-weight="500" class="font-sans">Tax (18% IGST)</text>
+      <text x="130" y="172" fill="#E2E8F0" font-size="11" font-weight="500" class="font-mono">₹ 8,100.00</text>
+      <text x="280" y="172" fill="#10B981" font-size="11" font-weight="700" class="font-mono">98.7%</text>
+      <rect x="375" y="160" width="56" height="18" rx="3" fill="#10B981" fill-opacity="0.15" />
+      <text x="382" y="173" fill="#10B981" font-size="9" font-weight="700" class="font-mono">PASSED</text>
+
+      <!-- Row 6: Total -->
+      <line x1="0" y1="184" x2="446" y2="184" stroke="#ffffff" stroke-opacity="0.04" />
+      <text x="12" y="202" fill="#F8FAFC" font-size="11" font-weight="700" class="font-sans">Total Amount</text>
+      <text x="130" y="202" fill="#00F0FF" font-size="11" font-weight="700" class="font-mono">₹ 53,100.00</text>
+      <text x="280" y="202" fill="#10B981" font-size="11" font-weight="700" class="font-mono">99.9%</text>
+      <rect x="375" y="190" width="56" height="18" rx="3" fill="#10B981" fill-opacity="0.15" />
+      <text x="382" y="203" fill="#10B981" font-size="9" font-weight="700" class="font-mono">PASSED</text>
+
+      <!-- Anomaly Engine Box -->
+      <g transform="translate(0, 226)">
+        <rect x="0" y="0" width="446" height="66" rx="8" fill="#111827" stroke="#ffffff" stroke-opacity="0.06" />
+        <circle cx="20" cy="22" r="4" fill="#00F0FF" />
+        <text x="32" y="25" fill="#F8FAFC" font-size="11" font-weight="600" class="font-sans">Anomaly Detection (Isolation Forest)</text>
+        <text x="20" y="44" fill="#71717A" font-size="10" font-weight="400" class="font-mono">Transaction Score: -0.12 (Within Normal Bounds &lt; 0.0)</text>
+        <text x="20" y="57" fill="#10B981" font-size="9.5" font-weight="500" class="font-mono">Vendor Historical Z-Score: +0.42σ (Normal billing pattern)</text>
+      </g>
+
+      <!-- Export Buttons -->
+      <g transform="translate(0, 304)">
+        <rect x="0" y="0" width="216" height="34" rx="6" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-opacity="0.3" />
+        <text x="54" y="22" fill="#00F0FF" font-size="11" font-weight="600" class="font-mono">✓ APPROVE INVOICE</text>
+
+        <rect x="230" y="0" width="216" height="34" rx="6" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.08" />
+        <text x="284" y="22" fill="#CBD5E1" font-size="11" font-weight="500" class="font-mono">EXPORT TO CSV / JSON</text>
+      </g>
+    </g>
+  </g>
+</svg>
